@@ -5,9 +5,9 @@ Untuk mengeksploitasi masal CMS Balitbang [PHP]
   php balit.php yourlist.txt
   
 # List
-  list yang berisi url harus tanpa menggunakan http/https
-    ex:
-    zeerx7.my.id
-    exploit.sch.id
-    muschool.sch.id
+         list yang berisi url harus tanpa menggunakan http/https
+         ex:
+         zeerx7.my.id
+         exploit.sch.id
+         muschool.sch.id
 
